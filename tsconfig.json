@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": ["ESNext"],
+    "checkJs": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "declaration": false,
+  },
+  "include": ["./src"],
+  "exclude": ["**/node_modules"],
+  "ts-node": {
+    "transpileOnly": false
+  },
+
+}

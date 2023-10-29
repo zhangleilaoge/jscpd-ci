@@ -1,0 +1,25 @@
+{
+  "name": "jscpd-ci",
+  "version": "1.0.0",
+  "description": "ci阶段代码重复度检查工具",
+  "author": "zhanglei",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "bin": "./lib/app/script/jscpd-ci.js",
+  "scripts": {
+    "dev": "yarn && tsc --watch -p ./tsconfig.json",
+    "build": "tsc -p ./tsconfig.json",
+    "release": "yarn build &&  npm publish",
+    "prepublishOnly": "yarn build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.6"
+  },
+  "dependencies": {
+    "date-fns": "1.29.0"
+  },
+  "packageManager": "yarn@1.5.1"
+}
